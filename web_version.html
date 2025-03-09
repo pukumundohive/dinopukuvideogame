@@ -17,12 +17,12 @@
             font-family: Arial, sans-serif;
             color: white;
         }
-        
+
         h1 {
             font-size: 24px;
             margin-bottom: 20px;
         }
-        
+
         .instructions-container {
             background-color: #222;
             border-radius: 8px;
@@ -30,9 +30,9 @@
             margin-bottom: 30px;
             max-width: 800px;
             width: 100%;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        
+
         .control-info {
             font-size: 16px;
             margin-bottom: 15px;
@@ -43,21 +43,7 @@
             border-radius: 5px;
             margin-top: 20px;
         }
-        
-        .download-link {
-            margin-top: 20px;
-            text-align: center;
-        }
-        
-        a {
-            color: #5fa3ff;
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
+
         .game-info {
             background-color: #222;
             border-radius: 8px;
@@ -66,37 +52,41 @@
             max-width: 800px;
             width: 100%;
         }
-        
-        .highlight {
+
+        /* Botonera */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            padding: 12px 20px;
+            font-size: 14px;
             font-weight: bold;
-            padding: 2px 5px;
-            border-radius: 3px;
+            text-decoration: none;
+            color: white;
+            background-color: #FF5F5F;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        
-        .green {
-            background-color: rgba(0, 200, 0, 0.2);
-            color: #00c800;
+
+        .button-container a:hover {
+            background-color: #e31337;
+            transform: scale(1.05);
         }
-        
-        .red {
-            background-color: rgba(220, 20, 60, 0.2);
-            color: #dc143c;
+
+        .button-container a.white-button {
+            background-color: white;
+            color: #FF5F5F;
         }
-        
-        .steps {
-            margin-left: 20px;
-        }
-        
-        .steps li {
-            margin-bottom: 10px;
-        }
-        
-        .preview-image {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 20px 0;
-            border: 2px solid #444;
+
+        .button-container a.white-button:hover {
+            background-color: #f0f0f0;
+            color: #e31337;
         }
     </style>
 </head>
@@ -106,68 +96,52 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/A-Kv60AKCd4?si=lFW_Xnf6NJfGNnWJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <h1>DinoPuku Video Game Video DEMO - Game very Soon... - Information Page</h1>
-    
-    <div class="instructions-container">
-        <h2>How to Play the Game</h2>
-               
-        <ol class="steps">
-            <li>Click on the "Run" button at the top of this Replit workspace</li>
-            <li>Wait for the game to launch (it might take a few seconds)</li>
-            <li>The game will appear in the "Game Runner" workflow tab</li>
-            <li>Click on the game window to give it focus and start playing!</li>
-        </ol>
-        
-        <div class="control-info">
-            <strong>Controls:</strong> 
-            <br>
-            SPACE / UP ARROW - Jump
-            <br>
-            DOWN ARROW - Duck
-        </div>
-    </div>
-    
-    <div class="game-info">
-        <h2>Game Features</h2>
-        <p>This game features two types of collectibles:</p>
-        <ul>
-            <li><span class="highlight green">HBD Coins</span> - Green coins that give 1 point</li>
-            <li><span class="highlight red">Hive Power</span> - Red coins that give 5 points</li>
-        </ul>
-        <p>The updated version has:</p>
-        <ul>
-            <li>Separate counters for both coin types</li>
-            <li>Green-colored HBD counter</li>
-            <li>Improved image quality for start and end screens</li>
-            <li>Bigger airplane that appears more frequently</li>
-            <li>Sound disabled for better performance</li>
-        </ul>
-    </div>
-    
-    <div class="control-info" style="background-color: #5050ff; margin-top: 30px; padding: 20px;">
-        <strong style="font-size: 20px;">🎮 PLAY THE GAME SOON</strong> 
+<h1>DinoPuku Video Game Video DEMO - Game very Soon... - Information Page</h1>
+
+<div class="instructions-container">
+    <h2>How to Play the Game</h2>
+    <ol class="steps">
+        <li>Click on the "Run" button at the top of this Replit workspace</li>
+        <li>Wait for the game to launch (it might take a few seconds)</li>
+        <li>The game will appear in the "Game Runner" workflow tab</li>
+        <li>Click on the game window to give it focus and start playing!</li>
+    </ol>
+    <div class="control-info">
+        <strong>Controls:</strong> 
         <br>
-        <p style="margin-top: 10px;">Accede directamente a este juego en:</p>
-        <div style="margin: 15px 0; padding: 10px; background-color: #333; border-radius: 5px;">
-            <code style="font-size: 16px; word-break: break-all;">https://www.youtube.com/watch?v=A-Kv60AKCd4</code>
-            <br>
-            <span style="font-size: 14px;">(Asegúrate de escribir la URL exactamente como aparece aquí)</span>
-        </div>
-        <a href="https://www.youtube.com/watch?v=A-Kv60AKCd4" target="_blank" style="display: inline-block; background-color: #FF5F5F; color: white; padding: 12px 25px; text-decoration: none; border-radius: 4px; margin-top: 15px; font-weight: bold;">ACCEDER AL JUEGO AHORA</a>
-        <p style="font-size: 14px; margin-top: 15px;">Prueba estas alternativas si sigues teniendo problemas:</p>
-        <ul style="list-style: none; padding-left: 10px; font-size: 14px;">
-            <li style="margin-bottom: 8px;">• URL directa al repl: <a href="https://www.youtube.com/watch?v=A-Kv60AKCd4" style="color: #5fa3ff;">https://www.youtube.com/watch?v=rkim0_I07iY</a></li>
-            <li style="margin-bottom: 8px;">• Enlace de desarrollo: <a href="https://www.youtube.com/watch?v=A-Kv60AKCd4" style="color: #5fa3ff;">https://www.youtube.com/watch?v=rkim0_I07iY</a></li>
-            <li style="margin-bottom: 8px;">• Enlace básico: <a href="https://www.youtube.com/watch?v=A-Kv60AKCd4" style="color: #5fa3ff;">https://www.youtube.com/watch?v=rkim0_I07iY</a></li>
-        </ul>
+        SPACE / UP ARROW - Jump
+        <br>
+        DOWN ARROW - Duck
     </div>
-    <a href="https://hive.io/" style="color: #e31337; target=" _blank">Hive Blockchain</a>  
-	<a href="https://peakd.com/c/hive-142415/created" style="color: #e31337; target=" _blank">PukuMundo Hive Community</a>
-	<a href="https://linktr.ee/pukumundo" style="color: #e31337; target=" _blank">PukuMundo Linktree</a>
-	<a href="https://linktr.ee/nahupuku" style="color: #e31337; target=" _blank">Nahu Puku Linktree</a>
-	<a href="https://spendhbd.com/@thedistriator" style="color: #e31337; target=" _blank">Spendhbd.com: @thedistriator</a>
-	<a href="https://peakd.com/c/hive-106130/created" style="color: #e31337; target=" _blank">Distriator  Hive Community</a>
-	<a href="https://peakd.com/hive-106130/@thedistriator/distriator-or-steps-to-run-a-successful-spendhbd-workshop" style="color: #e31337; target=" _blank">Distriator | Steps to Run a Successful SpendHBD Workshop</a>
-    </div>
+</div>
+
+<div class="game-info">
+    <h2>Game Features</h2>
+    <p>This game features two types of collectibles:</p>
+    <ul>
+        <li><span class="highlight green">HBD Coins</span> - Green coins that give 1 point</li>
+        <li><span class="highlight red">Hive Power</span> - Red coins that give 5 points</li>
+    </ul>
+    <p>The updated version has:</p>
+    <ul>
+        <li>Separate counters for both coin types</li>
+        <li>Green-colored HBD counter</li>
+        <li>Improved image quality for start and end screens</li>
+        <li>Bigger airplane that appears more frequently</li>
+        <li>Sound disabled for better performance</li>
+    </ul>
+</div>
+
+<!-- Botonera -->
+<div class="button-container">
+    <a href="https://hive.io/" target="_blank" class="white-button">Hive Blockchain</a>
+    <a href="https://peakd.com/c/hive-142415/created" target="_blank">PukuMundo Hive Community</a>
+    <a href="https://linktr.ee/pukumundo" target="_blank" class="white-button">PukuMundo Linktree</a>
+    <a href="https://linktr.ee/nahupuku" target="_blank">Nahu Puku Linktree</a>
+    <a href="https://spendhbd.com/@thedistriator" target="_blank" class="white-button">Spendhbd.com: @thedistriator</a>
+    <a href="https://peakd.com/c/hive-106130/created" target="_blank">Distriator Hive Community</a>
+    <a href="https://peakd.com/hive-106130/@thedistriator/distriator-or-steps-to-run-a-successful-spendhbd-workshop" target="_blank" class="white-button">Distriator | Steps to Run a Successful SpendHBD Workshop</a>
+</div>
+
 </body>
 </html>
