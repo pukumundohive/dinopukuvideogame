@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0; url=web_version.html">
+    <!-- Asegurar la redirección también con JavaScript -->
+    <script>
+        window.location.href = "web_version.html";
+    </script>
+    <title>Dino Puku Game - Redireccionando</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 40px;
+            background-color: #222;
+            color: white;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #333;
+            border-radius: 10px;
+        }
+        .loader {
+            border: 16px solid #f3f3f3;
+            border-top: 16px solid #FF5F5F;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            animation: spin 2s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dino Puku Video Game</h1>
+        <p>Redireccionando al juego...</p>
+        <div class="loader"></div>
+        <p>Si no eres redirigido automáticamente, <a href="web_version.html" style="color: #FF5F5F;">haz clic aquí</a>.</p>
+    </div>
+</body>
+</html>
